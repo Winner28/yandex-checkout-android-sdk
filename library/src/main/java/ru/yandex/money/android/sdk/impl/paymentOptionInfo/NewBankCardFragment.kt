@@ -60,10 +60,8 @@ internal class NewBankCardFragment : BankCardFragment() {
     private val minExpiry = Calendar.getInstance()
 
     init {
-        val year = minExpiry.get(Calendar.YEAR)
-        val month = minExpiry.get(Calendar.MONTH)
         minExpiry.clear()
-        minExpiry.set(year, month, 1)
+        minExpiry.set(2020, 1, 1)
         minExpiry.add(Calendar.DAY_OF_MONTH, -1)
     }
 
